@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Farm Live</h1>
+            <nav>
+                <a href="/index.html" class="px-4 hover:text-gray-300 transition duration-300">Home</a>
+                <a href="products.html" class="px-4 hover:text-gray-300 transition duration-300">Products</a>
+                <a href="about.html" class="px-4 hover:text-gray-300 transition duration-300">About Us</a>
+                <a href="contact.html" class="px-4 hover:text-gray-300 transition duration-300">Contact</a>
+                <a href="cart.html" class="px-4 hover:text-gray-300 transition duration-300">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Checkout Form -->
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6">Checkout</h2>
+        <form class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Shipping Information</h3>
+            <div class="mb-4">
+                <label for="name" class="block mb-2 text-gray-700">Full Name</label>
+                <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="address" class="block mb-2 text-gray-700">Address</label>
+                <input type="text" id="address" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="city" class="block mb-2 text-gray-700">City</label>
+                <input type="text" id="city" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="state" class="block mb-2 text-gray-700">State</label>
+                <input type="text" id="state" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="zip" class="block mb-2 text-gray-700">Zip Code</label>
+                <input type="text" id="zip" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+
+            <h3 class="text-xl font-semibold mb-4">Payment Information</h3>
+            <div class="mb-4">
+                <label for="card-number" class="block mb-2 text-gray-700">Card Number</label>
+                <input type="text" id="card-number" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="expiry-date" class="block mb-2 text-gray-700">Expiry Date</label>
+                <input type="text" id="expiry-date" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="cvc" class="block mb-2 text-gray-700">CVC</label>
+                <input type="text" id="cvc" class="w-full p-3 border border-gray-300 rounded-md">
+            </div>
+
+            <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-700">Place Order</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+                <p>&copy; 2024 Farm Live. All rights reserved.</p>
+                <p class="mt-2">Enquiry at
+                    <a href="number" class="underline">+2348136953850</a>,<br>
+                    <a href="email" class="underline">chinenyeifeoma26@gmail.com</a>.
+                </p>
+        </div>
+    </footer>
+
+    <!-- Tailwind CSS Custom Animation -->
+    <style>
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            animation: fade-in 2s ease-in-out;
+        }
+    </style>
+</body>
+</html>
